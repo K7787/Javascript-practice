@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Task</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+    <style>
+        .bg-custom {
+            background-image: url('path/to/your-background-image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-brown">
+    <div class="flex flex-row justify-center mt-12 gap-5">
+        <div class="flex w-36 h-36 hover:animate-spin">
+            <img src="path/to/star-image.png" alt="Star picture">
+        </div>
+        <div class="flex w-36 h-36 animate-bounce">
+            <img src="path/to/ball-image.png" alt="Ball picture">
+        </div>
+        <div class="flex w-36 h-36 hover:animate-ping">
+            <img src="path/to/pakistan-flag.png" alt="Pakistan flag">
+        </div>
+        <div class="flex w-36 h-36 animate-pulse">
+            <img src="path/to/bat-image.png" alt="Bat picture">
+        </div>
+    </div> 
+    <button class="bg-blue-400 w-24 h-10 ml-52 mt-10 hover:bg-yellow-400 hover:text-green-600 hover:-translate-x-10 duration-700 hover:opacity-50">
+        <i class="fas fa-search"></i>
+    </button>
+    
+    <div class="w-full h-16 bg-gray-300 mt-10">
+        <p class="text-3xl mt-2 text-center">Beautiful Picture Of Nature</p> 
+    </div>
+
+    <div class="w-72 h-48 bg-blue-500 flex mx-auto mt-10">
+        <img class="h-full w-full hover:skew-x-3 hover:rotate-45 duration-700" src="path/to/venue-image.jpg" alt="Venue">
+    </div>
+    
+    <div class="relative w-72 h-48 flex mx-auto mt-10 bg-custom">
+        <img class="w-full h-full opacity-50 hover:translate-x-72 duration-700" src="path/to/second-image.jpg" alt="Second image">
+    </div>
+    
+    <div class="w-72 h-48 bg-white flex mx-auto mt-10">
+        <img class="w-full h-full hover:scale-50 duration-700" src="path/to/third-image.jpg" alt="Third image">
+    </div>
+</body>
+</html>
