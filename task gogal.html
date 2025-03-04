@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task of flex bok</title>
+    <style>
+        .largestbox{
+            height: 600px;
+            width: 1200px;
+            background-color:white;
+            margin-left: 10px;
+            display: flex;
+          flex-wrap: wrap;
+        }
+        .box{
+            height: 200px;
+            width: 400px;
+            display: flex;
+       flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        margin-left: 120px;
+
+        }
+        .box1{
+            background-color:white;
+            display: flex;
+       flex-wrap: wrap;
+        
+        }
+        .box2{
+            background-color:white;
+            display: flex;
+       flex-wrap: wrap;
+      
+   
+        }
+        .box3{
+            background-color:white;
+            margin-top: 40px;
+         
+            display: flex;
+       flex-wrap: wrap;
+     
+        }
+        .box4{
+            background-color:white;
+            margin-top: 40px;
+            display: flex;
+       flex-wrap: wrap;
+        }
+        .ak{
+            height: 130px;
+            width: 150px;
+            background-color:white;
+            border: 5px solid black;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        gap: 7%;
+        border-radius: 8%;
+        }
+        .ak2{
+            height: 130px;
+            width: 150px;
+            background-color:white;
+            border: 5px solid black;
+            display: flex;
+        align-items: center;
+       margin-top: 30px;
+       gap: 7%;
+       border-radius: 8%;
+        }
+        .ak3{
+            height: 130px;
+            width: 150px;
+            background-color: white;
+            border: 5px solid black;
+            display: flex; 
+            align-items: center;
+            margin-top: 30px;
+            gap: 7%;
+            border-radius: 8%;
+        }
+        .ak4{
+            height: 130px;
+            width: 150px;
+            background-color:white;
+            border: 5px solid black;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            gap: 5%;
+            flex-direction: column; 
+            border-radius: 8%;
+        }
+        .ak5{
+            height: 130px;
+            width: 150px;
+            background-color:white;
+            border: 5px solid black;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            gap: 8%;
+            border-radius: 8%;
+        }
+        .ak6{
+            height: 130px;
+            width: 150px;
+            background-color:white;
+            border: 5px solid black;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            gap: 8%;
+            border-radius: 8%;
+        }
+        .ak7{
+            height: 130px;
+            width: 150px;
+            background-color:white;
+            border: 5px solid black;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            gap: 4%;
+            border-radius: 8%;
+        }
+        .ak8{
+            height: 130px;
+            width: 150px;
+            background-color: white;
+            border: 5px solid black;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            gap: 8%;
+            border-radius: 8%;
+        }
+        .no{
+            height: 25px;
+            width: 25px;
+            background-color: deepskyblue;
+            border: 1px solid black;
+            margin-left: 10px;
+            border-radius: 15%;
+        }
+        .no1{
+            height: 25px;
+            width: 25px;
+            background-color:deepskyblue;
+            border: 1px solid black;
+            border-radius: 15%;
+        }
+        .no2{
+            height: 25px;
+            width: 25px;
+            background-color:deepskyblue;
+            border: 1px solid black;
+            border-radius: 15%;
+        }
+        .no3{
+            height: 25px;
+            width: 25px;
+           background-color: darkgoldenrod;
+            border: 1px solid black;
+            margin-left: 40px;
+            border-radius: 15%;
+        }
+        .no4{
+            height: 25px;
+            width: 25px;
+            background-color: darkgoldenrod;
+            border: 1px solid black;
+            border-radius: 15%;
+        }
+        .no5{
+            height: 25px;
+            width: 25px;
+            background-color: darkgoldenrod;
+            border: 1px solid black;
+            border-radius: 15%;
+        }
+        .no6{
+            height: 25px;
+            width: 25px;
+            background-color: deepskyblue;
+            border: 1px solid black;
+            margin-left: 10px;
+            border-radius: 15%;
+           
+        }
+        .no7{
+            height: 25px;
+            width: 25px;
+            background-color: deepskyblue;
+            border: 1px solid black;
+            border-radius: 15%;
+           
+        }
+        .no8{
+            height: 25px;
+            width: 25px;
+            background-color:deepskyblue;
+            border: 1px solid black;
+            border-radius: 15%;
+         
+        }
+        .no9{
+            height: 25px;
+            width: 25px;
+            background-color: darkgoldenrod;
+            border: 1px solid black;
+            flex-direction: column;
+            margin-top: 30px;
+            border-radius: 15%;
+        }
+        .no10{
+            height: 25px;
+            width: 25px;
+            background-color:darkgoldenrod;
+            border: 1px solid black;
+            flex-direction: column;
+            border-radius: 15%;
+        }
+        .no11{
+            height: 25px;
+            width: 25px;
+            background-color:darkgoldenrod;
+            border: 1px solid black;
+            flex-direction: column;
+            border-radius: 15%;
+        }
+        .no12{
+            height: 25px;
+            width: 25px;
+            background-color:deepskyblue;
+            border: 1px solid brown;
+            flex-direction: column;
+            margin-left: 18px;
+            border-radius: 15%;
+        }
+        .no13{
+            height: 25px;
+            width: 25px;
+            background-color: darkgoldenrod;
+            border: 1px solid black;
+            border-radius: 15%;
+           
+        }
+        .no14{
+            height: 25px;
+            width: 25px;
+            background-color:deepskyblue;
+            border: 1px solid black;
+            border-radius: 15%;
+            
+        }
+        .no15{
+            height: 25px;
+            width: 25px;
+            background-color: deepskyblue;
+            border: 1px solid black;
+            margin-left: 18px;
+            border-radius: 15%;
+        }
+        .no16{
+            height: 25px;
+            width: 25px;
+            background-color: deepskyblue;
+            border: 1px solid black;
+            border-radius: 15%;
+            
+        }
+        .no17{
+            height: 25px;
+            width: 25px;
+            background-color: darkgoldenrod;
+            border: 1px solid black;
+            border-radius: 15%;
+            
+        }
+        .no18{
+            height: 25px;
+            width: 60px;
+            background-color:  deepskyblue;
+            border: 1px solid black;
+            margin-left:11px ;
+            border-radius: 15%;
+            border-radius: 15%;
+            
+        }
+        .no19{
+            height: 25px;
+            width: 25px;
+            background-color: deepskyblue;
+            border: 1px solid black;
+            border-radius: 15%;
+            
+        }
+        .no20{
+            height: 25px;
+            width: 20px;
+            background-color:  deepskyblue;
+            border: 1px solid black;
+            border-radius: 15%;
+            
+        }
+        .no21{
+            height: 25px;
+            width: 30px;
+            background-color: darkgoldenrod;
+            border: 1px solid black;
+            margin-left: 15px;
+            border-radius: 15%;
+        }
+        .no22{
+            height: 25px;
+            width: 30px;
+            background-color: darkgoldenrod;
+            border: 1px solid black;
+            border-radius: 15%;
+            
+        }
+        .no23{
+            height: 25px;
+            width: 30px;
+            background-color: darkgoldenrod;
+            border: 1px solid black;
+            border-radius: 15%;
+            
+        }
+    </style>
+</head>
+<body>
+  <div class="largestbox">
+    <div class="box box1">
+        <div class="ak">
+            <div class="no"></div>
+            <div class="no1"></div>
+            <div class="no2"></div>
+        </div>
+        <div class="ak2">
+            <div class="no3"></div>
+            <div class="no4"></div>
+            <div class="no5"></div>
+        </div>
+        <P style="font-size: 32px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"
+        <H1>ALIGNMENT</H1>
+    </div>
+    <div class="box box2">
+        <div class="ak3">
+            <div class="no6"></div>
+            <div class="no7"></div>
+            <div class="no8"></div>
+        </div>
+        <div class="ak4">
+            <div class="no9"></div>
+            <div class="no10"></div>
+            <div class="no11"></div>  
+        </div>
+        <p style="font-size: 32px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"
+        <H2>DIRECTION</H2>
+    </div>
+    <div class="box box3">
+        <div class="ak5">
+            <div class="no12"></div>
+            <div class="no13"></div>
+            <div class="no14"></div>
+        </div>
+        <div class="ak6">
+            <div class="no15"></div>
+            <div class="no16"></div>
+            <div class="no17"></div>
+        </div>
+        <P style="font-size: 32PX;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"
+        <h3>ORDER</h3>
+    </div>
+    <div class="box box4">
+        <div class="ak7">
+            <div class="no18"></div>
+            <div class="no19"></div>
+            <div class="no20"></div>
+        </div>
+        <div class="ak8">
+            <div class="no21"></div>
+            <div class="no22"></div>
+            <div class="no23"></div>
+        </div>
+        <P style="font-size: 32px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;margin-left: 2%;"
+            <h4>SIZE</h4>
+  </div>
+    </div>
+</body>
+</html>
