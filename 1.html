@@ -1,40 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>script</title>
 </head>
 <body>
-    
-</body>
-</html><html></html>
+    <script>
+        // the var variable which is overwrite a value and also decleard a same variBLE name
+        var a = 'khaksar alam';
+        var z;
+        z=100;
+        document.write(a + '</br>')// also use in this code a html tags
+        // document.write(z ) this is a singal line comment
+        document.write(z +"</br>" )
+       /* document.write(z )
+        document.write(z )
+        document.write(z )*/ //yhis is a multi line comment
 
-<head>
-    <title>React App</title>
-    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-</head>
-
-<body>
-    <div id="mydiv">
-    </div>
-    <script type="text/babel">
-    function Test()
-    {
-        const bla=()=>{alert("Hello React")}
-        return <button onClick={bla}>Click Me</button>
-    }
-    class Hello extends React.Component{
-        render()
-        {
-          return <div>Hello React code <Test /></div>  
-        }
-    }
-    ReactDOM.render(<Hello />,document.getElementById('mydiv'))
+        // let a variable which is overwrite a value but they didnot declread same variable name
+        // i-e let a=4 but they didnot decleaed a same name ie let a=4 in one script thry ave a error
+        let a=400;
+        let f=300;
+        const reasult =(a+f)/f;
+        document.write(reasult)
+        // comparison , comparison ave only two answer true or false
+        var aa=4;
+        var bb=5;
+        document.write(aa>=bb)
+        document.write(aa===bb)
+        console.log(aa!=bb)
+        console.log(aa!==bb)
     </script>
 </body>
-
 </html>
