@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poupes of boxes in js</title>
+</head>
+<h1 id="alam"></h1>
+<button type="button" onclick="test_function()">test confrim box</button>
+<body>
+    <script>
+        //the first poupes box is alert box
+        // window.alert("hello this is alert box which loaded the page");
+        //2nd is confirm box
+        // window.confirm("this is the confim box are yuo sure");
+        //example of confrim box
+function test_function(){
+    var x;
+    if(window.confirm("are you sure want to do some action")== true){
+ x="you click the okay button , means you want to do some ation";
+    }
+    else{
+        x="you cancelled the opreation and deos not want to do some action;"
+    }
+    document.getElementById("alam").innerHTML=x;
+}
+    </script>
+</body>
+</html>
