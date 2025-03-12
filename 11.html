@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // diffrence between a variable
+        var a='khaksar';
+        var a='alam';
+        a='khan'
+        console.log(a);
+        // var variable is declaried same name of varible and also asigned a new value in this variable
+       let b='khaksar';
+        //let a='alam'; they will gave eroor because let variable can not decleaired a same name of variable
+       b='khan';
+       console.log(b);
+       // but also asigned a new value of same variable
+       const c='noor';
+      // const c='alam'; 
+      // c='khan'these two stament gave erorr because const variable can nat decleairerd same and can not asigned a new value
+      console.log(c)
+      // and most important diffrence is that the var variable is global scope and let and const is block scop ie
+      for(var e=0;e<5;e++){
+        document.write(e + "<br>");
+      }
+      console.log(e)
+      // var variable also call of out of condition therefor they called global scope
+      for(let d=1;d<5;d++){
+        document.write(d + "<br>");
+      }
+      //console.log(d) they gave erorr becuse they are block scope varable
+      for(let f=0;f<5;f=f+1){
+        document.write(f + "<br>");
+      }
+      //console.log(f) they gave erorr becuse they are block scope varable
+    </script>
+</body>
+</html>

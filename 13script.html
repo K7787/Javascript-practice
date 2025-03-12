@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(name,course,...args){
+document.write(`Hello ${name} of ${course} :`)
+           let sum=0;
+            for(let a in args){
+                sum+=args[a];
+            }
+            document.write(sum + '<br>')
+        }
+        sum("khaksar alam","BSSE",23,45,65,78);
+       sum("Hammad khan","BSSE",23,45,65);
+        sum("Sohail khan","BSSE",23,45,65,78 ,57);
+    </script>
+</body>
+</html>
