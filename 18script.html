@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class inheritance</title>
+</head>
+<body>
+    <script>
+        class employe{
+            constructor(name,age,salary){
+                this.emname=name;
+                this.emage=age;
+                this.emsalary=salary;
+            }
+            info(){
+                document.write(`<h3>Employe Class</h3>
+                              name: ${this.emname} <br>
+                              age: ${this.emage} <br>
+                              salary: ${this.emsalary} <br>  `)
+            }
+        }
+        class maneger extends employe{
+            info(){
+                let ta=1000;
+                let pa=450;
+                let totalsalary=this.emsalary+ ta+pa;
+                document.write(`<h3>maneger Class</h3>
+                              name: ${this.emname} <br>
+                              age: ${this.emage} <br>
+                              salary: ${this.totalsalary} <br>  `)
+
+            }
+        }
+        var a=new employe("Khaksar alam",21,5000000);
+        var b=new maneger("Hammad khan",23,50000);
+        a.info();
+        b.info();
+    </script>
+</body>
+</html>
