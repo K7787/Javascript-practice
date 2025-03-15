@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+    <p id="demo">here we load data </p>
+    <button onclick="uploddata()">click me</button>
+    <script>
+function uploddata(){
+    var xhtp=new XMLHttpRequest();
+    xhtp.onreadystatechange=function(){
+        if(this.readyState==4&&this.status==200){
+            console.log(this.responseText)
+        }
+    }
+
+
+
+
+
+    xhtp.open('GET',"https://jsonplaceholder.typicode.com/posts",true);
+    xhtp.send();
+}
+    </script>
+</body>
+</html>
