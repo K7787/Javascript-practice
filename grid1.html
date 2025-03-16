@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid1</title>
+    <style>
+        .parent{
+            width: 700px;
+            height: 400px;
+            background-color: brown;
+            margin:70px;
+            display: grid;
+            grid-template-columns: 30% 30% auto;
+            grid-template-rows: 50% auto;
+            grid-gap: 10px;
+
+        }
+        .child{
+            background-color: aquamarine;
+        }
+        .child1{
+            background-color: violet;
+        }
+        .child2{
+            background-color: yellow;
+        }
+        .child3{
+            background-color: blueviolet;
+        }
+        .child4{
+            background-color: chocolate;
+        }
+        .child5{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid CSS</h1>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+        <div class="child5"></div>
+    </div>
+</body>
+</html>
